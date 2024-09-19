@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  font-family: "Public Sans", sans-serif;
+  font-size: 1.125rem;
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  outline: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+*::after, *::before {
+  box-sizing: inherit;
+}
+
+.pos-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+@media (min-width: 768px) {
+  .btn {
+    background: linear-gradient(hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    width: 120px;
+    height: 10px;
+    border-radius: 25px;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    font-size: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+}
+.btn:hover {
+  opacity: 0.8;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background-color: #000;
+  opacity: 0.5;
+  display: none;
+}
+.overlay.active {
+  display: block;
+}
+
+.row {
+  display: flex;
+  flex-direction: column-reverse;
+}
+@media (min-width: 768px) {
+  .row {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .row {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1339px) {
+  .row {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+@media (min-width: 1440px) {
+  .row {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.col-1 {
+  width: 8.3333333333%;
+}
+
+.col-2 {
+  width: 16.6666666667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.3333333333%;
+}
+
+.col-5 {
+  width: 41.6666666667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.3333333333%;
+}
+
+.col-8 {
+  width: 66.6666666667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.3333333333%;
+}
+
+.col-11 {
+  width: 91.6666666667%;
+}
+
+.col-12 {
+  width: 100%;
+}/*# sourceMappingURL=golbal_ruls.css.map */

@@ -1,0 +1,5 @@
+/// functions
+@function ram($size){
+    $calc:calc($size / 16);
+    @return  $calc+rem
+}

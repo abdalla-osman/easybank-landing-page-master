@@ -1,0 +1,41 @@
+@import './colors.scss';
+/// @param{}
+@mixin btn($w,$h){
+    background:linear-gradient($LimeGreen,$BrightCyan);
+    width: $w;
+    height: $h;
+    border-radius:25px;
+    color: $white;
+    text-align: center;
+    font-size: ram(12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin space-bteewn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@mixin column-center{
+    @include space-bteewn();
+    flex-direction: column;
+}
+@mixin overlay($bg,$op){
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    background-color: $bg;
+    opacity: $op;
+}
+@mixin circle($di){
+    width: $di;
+    height: $di;
+    background:linear-gradient($LimeGreen,$BrightCyan);
+    border-radius: 50%;
+}
